@@ -62,24 +62,31 @@
   "experience": [
     {
       "id": 1,
-      "title": "Magang IT Support",
-      "company": "PLN Icon Plus",
-      "duration": "Jun 2023 - Agu 2023",
-      "desc": "Mengembangkan dashboard IT Support menggunakan CodeIgniter 4 dan membantu tim IT dalam tugas troubleshooting."
+      "title": "Asisten Laboratorium — Rekayasa Perangkat Lunak & Komputasi Cerdas",
+      "company": "Institut Teknologi Perusahaan Listrik Negara (ITPLN)",
+      "duration": "Juli 2023 – Januari 2025",
+      "desc": "Memberikan pembelajaran praktis kepada lebih dari 100 mahasiswa setiap semester, serta menangani operasional perangkat lunak dan keras. Membantu dosen selama sesi praktikum, melakukan pemeliharaan aplikasi, dan menangani troubleshooting perangkat keras. Aktif berkontribusi dalam pengelolaan laboratorium serta berkolaborasi dalam proyek R&D terkait Rekayasa Perangkat Lunak dan Komputasi Cerdas."
     },
     {
       "id": 2,
-      "title": "Web Developer Freelance",
-      "company": "Proyek Pribadi",
-      "duration": "Sep 2023 - Sekarang",
-      "desc": "Membuat website portofolio interaktif menggunakan React, Next.js, dan Tailwind CSS. Fokus pada desain UX dan layout responsif."
+      "title": "Koordinator — Laboratorium Rekayasa Perangkat Lunak",
+      "company": "Institut Teknologi Perusahaan Listrik Negara (ITPLN)",
+      "duration": "Januari 2025 – Sekarang",
+      "desc": "Memimpin tim beranggotakan 24 asisten laboratorium, mengawasi operasional harian, penjadwalan, dan kegiatan supervisi untuk memastikan lingkungan belajar dan riset yang efektif. Membimbing mahasiswa dalam proyek web, mobile, dan machine learning, serta mengoordinasikan kegiatan penelitian untuk menjaga kualitas dan inovasi akademik di laboratorium."
     },
     {
       "id": 3,
-      "title": "Developer Prototype AI",
-      "company": "FaceGuard-AI",
-      "duration": "Okt 2024 - Sekarang",
-      "desc": "Merancang prototype sistem proteksi identitas berbasis AI & anti-deepfake menggunakan Figma, menampilkan fitur dan desain UI utama."
+      "title": "Magang IT Support & Web Developer",
+      "company": "PLN Icon Plus",
+      "duration": "Februari 2025 – Maret 2025",
+      "desc": "Mengembangkan dashboard IT Support menggunakan CodeIgniter 4 serta membantu departemen IT dalam tugas troubleshooting dan pemeliharaan sistem."
+    },
+    {
+      "id": 4,
+      "title": "Magang Data Analyst",
+      "company": "Kementerian Kehutanan Indonesia",
+      "duration": "Agustus 2025 – November 2025",
+      "desc": "Mendukung publikasi SAKU Vol. II (JEJAK RIMBA) dengan melakukan pembersihan, analisis, dan visualisasi data lingkungan serta kehutanan untuk mendukung pengambilan keputusan berbasis data."
     }
   ]
 }

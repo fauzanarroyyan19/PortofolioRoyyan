@@ -59,27 +59,35 @@
     "tools": ["VSCode","NetBeans","Android Studio","GitHub","Figma","Jupyter","Colab","Microsoft","SQL","Power BI"],
     "frameworks": ["React","Next.js","Vite","Laravel","Flask","CodeIgniter","Node.js","Tailwind"]
   },
+  
    "experience": [
     {
       "id": 1,
-      "title": "IT Support Intern",
-      "company": "PLN Icon Plus",
-      "duration": "Jun 2023 - Aug 2023",
-      "desc": "Developed IT Support dashboard using CodeIgniter 4 and assisted the IT team with troubleshooting tasks."
+      "title": "Laboratory Assistant — Software Engineering & Intelligent Computing",
+      "company": "Institut Teknologi Perusahaan Listrik Negara (ITPLN)",
+      "duration": "July 2023 – January 2025",
+      "desc": "Facilitated hands-on learning for over 100 students each semester while handling both software and hardware operations. Assisted lecturers during lab sessions, maintained applications, and provided hardware troubleshooting. Actively contributed to lab management and collaborated on R&D projects related to Software Engineering and Intelligent Computing."
     },
     {
       "id": 2,
-      "title": "Freelance Web Developer",
-      "company": "Personal Projects",
-      "duration": "Sep 2023 - Present",
-      "desc": "Built an interactive portfolio website using React, Next.js, and Tailwind CSS. Focused on UX design and responsive layouts."
+      "title": "Coordinator — Software Engineering Laboratory",
+      "company": "Institut Teknologi Perusahaan Listrik Negara (ITPLN)",
+      "duration": "January 2025 – Present",
+      "desc": "Leads a team of 24 lab assistants, overseeing daily operations, scheduling, and supervision to ensure effective learning and research environments. Guides students in web, mobile, and machine learning projects, and coordinates research activities to maintain academic quality and innovation within the lab."
     },
     {
       "id": 3,
-      "title": "AI Prototype Developer",
-      "company": "FaceGuard-AI",
-      "duration": "Oct 2024 - Present",
-      "desc": "Designed an AI-based identity protection & anti-deepfake prototype using Figma, showcasing core features and UI design."
+      "title": "IT Support & Web Developer Intern",
+      "company": "PLN Icon Plus",
+      "duration": "February 2025 – March 2025",
+      "desc": "Developed an IT Support dashboard using CodeIgniter 4 and assisted the IT department with system troubleshooting and maintenance tasks."
+    },
+    {
+      "id": 4,
+      "title": "Data Analyst Intern",
+      "company": "Ministry of Forestry Indonesia",
+      "duration": "August 2025 – November 2025",
+      "desc": "Supported the SAKU Vol. II (JEJAK RIMBA) publication by cleaning, analyzing, and visualizing environmental and forestry data to support data-driven decision-making."
     }
   ]
 }

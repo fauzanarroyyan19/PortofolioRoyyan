@@ -4,23 +4,28 @@ import { useLanguage } from "../context/LanguageContext";
 import idData from "../locales/id.json";
 import enData from "../locales/en.json";
 
-export default function Experience() {
- const { lang } = useLanguage();
-   const experiences = lang === "ID" ? idData.experience : enData.experience;
+export default function Project() {
+  const { lang } = useLanguage();
+  // ✅ Ambil data sesuai bahasa yang dipilih
+  const experiences = lang === "ID" ? idData.experience : enData.experience;
 
   const listVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: i => ({
+    visible: (i) => ({
       opacity: 1,
       y: 0,
-      transition: { delay: i * 0.1, duration: 0.4 }
-    })
+      transition: { delay: i * 0.1, duration: 0.4 },
+    }),
   };
 
   return (
-    <section id="experience" className="px-6 md:px-10 py-12">
-      <h2 className="text-2xl font-semibold text-neon">#experience</h2>
+    <section id="projects" className="px-6 md:px-10 py-12">
+      <h2 className="text-2xl font-semibold text-neon">
+  {lang === "ID" ? "#pengalaman-saya" : "#experience"}
+</h2>
+
       <div className="mt-6 space-y-6">
+        {/* ✅ Pakai experiences yang sudah diterjemahkan */}
         {experiences.map((exp, i) => (
           <motion.div
             key={exp.id}
