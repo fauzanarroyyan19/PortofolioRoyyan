@@ -188,6 +188,15 @@ button:hover {
   border-radius: 0.5rem;
 }
 
+/* Fix viewport scaling di deploy */
+html, body {
+  zoom: 1 !important;
+  transform: none !important;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+
 /* ===================================
    Responsive Helpers
 =================================== */
