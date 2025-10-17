@@ -98,7 +98,6 @@ main, section {
     padding: 2.5rem;
   }
 }
-
 /* ===================================
    Hero Section
 =================================== */
@@ -108,17 +107,43 @@ main, section {
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 80vh;
+  min-height: 100vh; /* biar full tapi gak ketarik zoom */
   gap: 1.5rem;
+  padding-top: 6rem; /* jarak aman dari navbar */
+  box-sizing: border-box;
 }
 
 .hero img {
-  max-width: 300px;
+  max-width: 280px;
   width: 80%;
   height: auto;
   filter: drop-shadow(0 0 12px rgba(168, 85, 247, 0.2));
+  transition: transform 0.3s ease;
 }
 
+.hero img:hover {
+  transform: scale(1.03);
+}
+
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+    padding-top: 8rem; /* navbar offset buat layar gede */
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding-top: 7rem; /* biar tulisan gak nabrak navbar */
+    min-height: auto;
+  }
+
+  .hero img {
+    max-width: 220px;
+  }
+}
 /* ===================================
    Cards
 =================================== */
