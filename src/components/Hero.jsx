@@ -39,8 +39,8 @@ export default function Hero() {
   };
 
   return (
-    <section className="w-full h-screen relative bg-[#0f0f16] text-gray-200 flex items-center justify-center px-10 md:px-20 overflow-hidden">
-      {/* Animated Background Blobs */}
+    <section className="w-full min-h-[85vh] relative bg-[#0f0f16] text-gray-200 flex flex-col md:flex-row items-center justify-center px-6 md:px-16 lg:px-24 py-10 overflow-hidden">
+      {/* Background animation */}
       <motion.div
         animate={{ x: [0, 100, 0], y: [0, -50, 0] }}
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
@@ -52,19 +52,20 @@ export default function Hero() {
         className="absolute w-60 h-60 bg-pink-500/20 rounded-full blur-3xl bottom-20 right-20"
       />
 
+      {/* Content */}
       <div className="w-full max-w-7xl flex flex-col md:flex-row items-center justify-between gap-10 z-10">
-        {/* Text Section */}
-        <div className="flex flex-col items-start text-left space-y-6">
+        {/* Text section */}
+        <div className="flex flex-col items-start text-left space-y-6 md:w-1/2">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl md:text-5xl font-bold leading-tight"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight"
           >
             {content[lang].title}
           </motion.h1>
 
-          <p className="text-gray-400 max-w-md text-sm md:text-base">
+          <p className="text-gray-400 max-w-md text-sm sm:text-base">
             {content[lang].desc}
           </p>
 
@@ -85,24 +86,22 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Image Section */}
+        {/* Image section */}
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex justify-end"
+          className="flex justify-center md:w-1/2"
         >
-{/* Image Section */}
-<div className="relative w-[500px] h-[500px] md:w-[800px] md:h-[800px] flex-shrink-0">
-  <Image
-    src={profilePic}
-    alt="Royyan"
-    fill
-    className="rounded-lg object-contain grayscale hover:grayscale-0 transition-all"
-  />
-</div>
-
-
+          <div className="relative w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] md:w-[450px] md:h-[450px] lg:w-[500px] lg:h-[500px]">
+            <Image
+              src={profilePic}
+              alt="Royyan"
+              fill
+              className="rounded-lg object-contain grayscale hover:grayscale-0 transition-all duration-500"
+              priority
+            />
+          </div>
         </motion.div>
       </div>
     </section>
