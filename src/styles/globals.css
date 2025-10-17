@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #121316;
+  --accent: #a855f7;
+  --text: #d1d5db;
+}
+
+/* 🔥 Font global lebih besar */
+html {
+  font-size: 23px; /* default biasanya 16px, ini kita naikin */
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 26px; /* makin gede di layar besar */
+  }
+}
+
+/* dasar layout */
+html, body, #__next {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--bg);
+}
+
+/* teks dasar */
+body {
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* heading biar makin tegas */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+/* paragraf lebih enak dibaca */
+p {
+  font-size: 1.1rem;
+}
+
+/* warna khusus */
+.text-neon {
+  color: #a855f7;
+}
+.bg-neon {
+  background-color: #a855f7;
+}
+
+/* small helper */
+.font-mono {
+  font-family: 'Space Mono', monospace;
+}
+
+/* layout utama */
+main, section, div {
+  max-width: 100% !important;
+}
+
+/* hero section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* full tinggi layar */
+  width: 100%;
+  text-align: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* .hero img {
+  max-width: 300px;
+  height: auto;
+} */

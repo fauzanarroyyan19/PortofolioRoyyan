@@ -1,0 +1,86 @@
+{
+  "hero": {
+    "title1": "Royyan is a ",
+    "role1": "Web Developer",
+    "title2": " and ",
+    "role2": "AI & Machine Learning Enthusiast",
+    "desc": "Yo, I’m Royyan — a web dev who vibes with AI & machine learning. I build cool stuff on the internet and love experimenting with smart tech.",
+    "contact": "Contact me!!"
+  },
+
+  "navbar": {
+    "projects": "#projects",
+    "skills": "#skills",
+    "experience": "#experience",
+    "contacts": "#contacts"
+  },
+
+  "intro": {
+    "title": "Royyan is a Web Designer and Front-End Developer",
+    "subtitle": "He creates responsive websites where technology meets creativity.",
+    "contactMe": "Contact me!!"
+  },
+
+  "projects": [
+    {
+      "id": 1,
+      "title": "FaceGuard-AI",
+      "tech": ["Figma"],
+      "desc": "Prototype AI-based identity protection & anti-deepfake system. Designed entirely in Figma to visualize features and user interface.",
+      "image": "/projects/faceguard.png",
+      "live": "'https://www.figma.com/proto/nWVaBgK2d2v8KGGhHwudbI/PROJEK--TEKNO?page-id=1%3A11&node-id=7-129&p=f&viewport=3411%2C-860%2C0.48&t=02T3dcZONsmI9CpX-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=58%3A80',",
+      "repo": "#"
+    },
+    {
+      "id": 2,
+      "title": "ProtectX",
+      "tech": ["React","Express","Discord.js","Node.js"],
+      "desc": "Bot anti-crash untuk Discord",
+      "image": "/projects/project2.png",
+      "live": "#",
+      "repo": "#"
+    },
+    {
+      "id": 3,
+      "title": "Kahoot Answers Viewer",
+      "tech": ["CSS","Express","Node.js"],
+      "desc": "Get answers to your kahoot quiz",
+      "image": "/projects/project3.png",
+      "live": "#",
+      "repo": "#"
+    }
+  ],
+
+  "skills": {
+    "langsTitle": "Languages",
+    "toolsTitle": "Tools",
+    "frameworksTitle": "Frameworks",
+    "langs": ["HTML","CSS","JavaScript","Python","Java","C","C++","C#","PHP","Kotlin"],
+    "tools": ["VSCode","NetBeans","Android Studio","GitHub","Figma","Jupyter","Colab","Microsoft","SQL","Power BI"],
+    "frameworks": ["React","Next.js","Vite","Laravel","Flask","CodeIgniter","Node.js","Tailwind"]
+  },
+   "experience": [
+    {
+      "id": 1,
+      "title": "IT Support Intern",
+      "company": "PLN Icon Plus",
+      "duration": "Jun 2023 - Aug 2023",
+      "desc": "Developed IT Support dashboard using CodeIgniter 4 and assisted the IT team with troubleshooting tasks."
+    },
+    {
+      "id": 2,
+      "title": "Freelance Web Developer",
+      "company": "Personal Projects",
+      "duration": "Sep 2023 - Present",
+      "desc": "Built an interactive portfolio website using React, Next.js, and Tailwind CSS. Focused on UX design and responsive layouts."
+    },
+    {
+      "id": 3,
+      "title": "AI Prototype Developer",
+      "company": "FaceGuard-AI",
+      "duration": "Oct 2024 - Present",
+      "desc": "Designed an AI-based identity protection & anti-deepfake prototype using Figma, showcasing core features and UI design."
+    }
+  ]
+}
+
