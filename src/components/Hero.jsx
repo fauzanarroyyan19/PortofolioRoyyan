@@ -39,7 +39,8 @@ export default function Hero() {
   };
 
   return (
-    <section className="w-full min-h-[85vh] relative bg-[#0f0f16] text-gray-200 flex flex-col md:flex-row items-center justify-center px-6 md:px-16 lg:px-24 py-10 overflow-hidden">
+   <section className="w-full min-h-[85vh] relative bg-[#0f0f16] text-gray-200 flex flex-col md:flex-row items-center justify-center px-6 md:px-16 lg:px-24 pt-24 md:pt-32 pb-10 overflow-hidden">
+
       {/* Background animation */}
       <motion.div
         animate={{ x: [0, 100, 0], y: [0, -50, 0] }}
