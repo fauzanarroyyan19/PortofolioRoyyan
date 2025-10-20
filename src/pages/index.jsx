@@ -15,7 +15,7 @@ export default function Home() {
       <Experience />
       <Contact />
       <footer className="text-center py-6 text-sm text-gray-400">
-        © {new Date().getFullYear()} Royyan — Made with 💜 using Next.js & Tailwind
+        © {new Date().getFullYear()} Royyan — Made With Next.js & Tailwind
       </footer>
     </div>
   );
