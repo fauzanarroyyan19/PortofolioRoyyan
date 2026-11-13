@@ -11,36 +11,37 @@ export default function Hero() {
     ID: {
       title: (
         <>
-          Royyan adalah{" "}
+          Fauzan Ar Royyan adalah{" "}
           <span className="text-purple-500">Web Developer</span> <br /> dan{" "}
-          <span className="text-purple-500">
-            Penggemar AI & Machine Learning
-          </span>
+          <span className="text-purple-500">Data Analyst</span>
         </>
       ),
-      desc: `Halo, saya Royyan — seorang web developer yang tertarik dengan AI dan machine learning. Saya suka bikin hal-hal keren di internet dan bereksperimen dengan teknologi cerdas yang berguna.`,
-      button: "Hubungi saya!!",
-      working: "Sedang mengerjakan proyek di",
+      subtitle: "Dengan minat pada AI & Machine Learning",
+      desc: `Lulusan Teknik Informatika (IPK 3.72) dengan pengalaman di web development, analisis data, dan IT support. Pernah membangun IT Support Dashboard di PLN Icon Plus, mengolah 1000+ dataset kehutanan di Kementerian Kehutanan, dan memimpin 24 asisten laboratorium sebagai Koordinator Lab.`,
+      button: "Hubungi saya",
+      statusLabel: "Terbuka untuk peluang",
+      statusHighlight: "Web Developer / Data Analyst",
+      location: "Jakarta, Indonesia",
     },
     EN: {
       title: (
         <>
-          Royyan is a{" "}
+          Fauzan AR Royyan is a{" "}
           <span className="text-purple-500">Web Developer</span> <br /> and{" "}
-          <span className="text-purple-500">
-            AI & Machine Learning Enthusiast
-          </span>
+          <span className="text-purple-500">Data Analyst</span>
         </>
       ),
-      desc: `Yo, I’m Royyan — a web dev who vibes with AI & machine learning. I build cool stuff on the internet and love experimenting with smart tech that actually does something useful.`,
-      button: "Contact me !!",
-      working: "Currently working on",
+      subtitle: "With an interest in AI & Machine Learning",
+      desc: `Informatics Engineering graduate (GPA 3.72) with experience in web development, data analysis, and IT support. Built an IT Support Dashboard at PLN Icon Plus, processed 1000+ forestry datasets at the Ministry of Forestry, and led a team of 24 lab assistants as Laboratory Coordinator.`,
+      button: "Contact me",
+      statusLabel: "Open to opportunities as",
+      statusHighlight: "Web Developer / Data Analyst",
+      location: "Jakarta, Indonesia",
     },
   };
 
   return (
-   <section className="w-full min-h-[85vh] relative bg-[#0f0f16] text-gray-200 flex flex-col md:flex-row items-center justify-center px-6 md:px-16 lg:px-24 pt-24 md:pt-32 pb-10 overflow-hidden">
-
+    <section className="w-full min-h-[85vh] relative bg-[#0f0f16] text-gray-200 flex flex-col md:flex-row items-center justify-center px-6 md:px-16 lg:px-24 pt-24 md:pt-32 pb-10 overflow-hidden">
       {/* Background animation */}
       <motion.div
         animate={{ x: [0, 100, 0], y: [0, -50, 0] }}
@@ -66,6 +67,10 @@ export default function Hero() {
             {content[lang].title}
           </motion.h1>
 
+          <p className="text-purple-300 text-sm sm:text-base font-medium -mt-2">
+            {content[lang].subtitle}
+          </p>
+
           <p className="text-gray-400 max-w-md text-sm sm:text-base">
             {content[lang].desc}
           </p>
@@ -78,13 +83,15 @@ export default function Hero() {
             {content[lang].button}
           </motion.a>
 
-          <div className="flex items-center space-x-2 text-sm text-gray-400 mt-3 border border-gray-700 px-3 py-2 rounded-md">
+          <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-gray-400 mt-3 border border-gray-700 px-3 py-2 rounded-md">
             <div className="w-3 h-3 bg-purple-500 rounded-full animate-pulse"></div>
-            <span>{content[lang].working}</span>
+            <span>{content[lang].statusLabel}</span>
             <span className="font-semibold text-purple-400">
-              Kementerian Kehutanan
+              {content[lang].statusHighlight}
             </span>
           </div>
+
+          <p className="text-xs text-gray-500">{content[lang].location}</p>
         </div>
 
         {/* Image section */}
@@ -97,7 +104,7 @@ export default function Hero() {
           <div className="relative w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] md:w-[450px] md:h-[450px] lg:w-[500px] lg:h-[500px]">
             <Image
               src={profilePic}
-              alt="Royyan"
+              alt="Fauzan AR Royyan"
               fill
               className="rounded-lg object-contain grayscale hover:grayscale-0 transition-all duration-500"
               priority

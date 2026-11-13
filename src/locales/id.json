@@ -1,40 +1,62 @@
 {
   "hero": {
-    "title1": "Royyan adalah seorang ",
+    "title1": "Fauzan AR Royyan adalah ",
     "role1": "Web Developer",
     "title2": " dan ",
-    "role2": "AI & Machine Learning Enthusiast",
-    "desc": "Yo, aku Royyan — web dev yang suka main-main sama AI & machine learning. Aku bikin hal keren di internet sambil ngulik teknologi cerdas yang beneran berguna.",
-    "contact": "Hubungi Aku!!"
+    "role2": "Data Analyst",
+    "subtitle": "Dengan minat pada AI & Machine Learning",
+    "desc": "Lulusan Teknik Informatika (IPK 3.72) dengan pengalaman di web development, analisis data, dan IT support. Pernah membangun IT Support Dashboard di PLN Icon Plus, mengolah 1000+ dataset kehutanan di Kementerian Kehutanan, dan memimpin 24 asisten laboratorium sebagai Koordinator Lab.",
+    "contact": "Hubungi saya",
+    "statusLabel": "Terbuka untuk peluang",
+    "statusHighlight": "Web Developer / Data Analyst",
+    "location": "Jakarta, Indonesia"
   },
-
   "navbar": {
     "projects": "#proyek",
     "skills": "#keahlian",
     "experience": "#pengalaman-saya",
     "contacts": "#kontak"
   },
-
   "intro": {
-    "title": "Royyan adalah Seorang Web Designer dan Front-End Developer",
-    "subtitle": "Ia membuat situs web responsif di mana teknologi bertemu kreativitas.",
-    "contactMe": "Hubungi saya!!"
+    "title": "Fauzan AR Royyan adalah Web Developer dan Data Analyst",
+    "subtitle": "Membangun situs web responsif dan solusi berbasis data yang andal.",
+    "contactMe": "Hubungi saya"
   },
-
   "projects": [
+    {
+      "id": 4,
+      "title": "Portal Pengajuan Kredit PT. JKL",
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "LocalStorage"
+      ],
+      "desc": "Web sederhana untuk mendigitalisasi pengajuan kredit kendaraan dengan alur multi-peran (Sales Dealer, Marketing, Atasan Marketing, Admin Backoffice, Konsumen), mulai dari pengajuan hingga pencairan dana. Data disimpan di localStorage.",
+      "image": "/projects/jkl-kredit.png",
+      "live": "https://project-pdp-fauzan-ar-royyan.vercel.app/",
+      "repo": "https://github.com/fauzanarroyyan19/ProjectPDP_FauzanArRoyyan.git"
+    },
     {
       "id": 1,
       "title": "FaceGuard-AI",
-      "tech": ["Figma"],
+      "tech": [
+        "Figma"
+      ],
       "desc": "Prototype sistem proteksi identitas berbasis AI & anti-deepfake. Dibuat di Figma untuk memvisualisasikan fitur dan UI.",
       "image": "/projects/faceguard.png",
-      "live": "https://www.figma.com/proto/...",
+      "live": "https://www.figma.com/proto/nWVaBgK2d2v8KGGhHwudbI/PROJEK--TEKNO?page-id=1%3A11&node-id=7-129&p=f&viewport=3411%2C-860%2C0.48&t=02T3dcZONsmI9CpX-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=58%3A80",
       "repo": "#"
     },
     {
       "id": 2,
       "title": "ProtectX",
-      "tech": ["React","Express","Discord.js","Node.js"],
+      "tech": [
+        "React",
+        "Express",
+        "Discord.js",
+        "Node.js"
+      ],
       "desc": "Bot anti-crash untuk Discord",
       "image": "/projects/project2.png",
       "live": "#",
@@ -43,21 +65,66 @@
     {
       "id": 3,
       "title": "Kahoot Answers Viewer",
-      "tech": ["CSS","Express","Node.js"],
+      "tech": [
+        "CSS",
+        "Express",
+        "Node.js"
+      ],
       "desc": "Get answers to your kahoot quiz",
       "image": "/projects/project3.png",
       "live": "#",
       "repo": "#"
     }
   ],
-
   "skills": {
     "langsTitle": "Bahasa Pemrograman",
     "toolsTitle": "Alat",
     "frameworksTitle": "Frameworks",
-    "langs": ["HTML","CSS","JavaScript","Python","Java","C","C++","C#","PHP","Kotlin"],
-    "tools": ["VSCode","NetBeans","Android Studio","GitHub","Figma","Jupyter","Colab","Microsoft","SQL","Power BI"],
-    "frameworks": ["React","Next.js","Vite","Laravel","Flask","CodeIgniter","Node.js","Tailwind"]
+    "langs": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Python",
+      "Java",
+      "C",
+      "C++",
+      "C#",
+      "PHP",
+      "Kotlin",
+      "Go"
+    ],
+    "tools": [
+      "VSCode",
+      "NetBeans",
+      "Android Studio",
+      "Git",
+      "GitHub",
+      "Linux",
+      "Figma",
+      "Postman",
+      "Vercel",
+      "XAMPP",
+      "Jupyter",
+      "Colab",
+      "SQL",
+      "MySQL",
+      "PostgreSQL",
+      "Pandas",
+      "Matplotlib",
+      "Power BI",
+      "Microsoft Excel",
+      "Microsoft Access"
+    ],
+    "frameworks": [
+      "React",
+      "Next.js",
+      "Vite",
+      "Node.js",
+      "Laravel",
+      "CodeIgniter 4",
+      "Flask",
+      "Tailwind CSS"
+    ]
   },
   "experience": [
     {
@@ -65,28 +132,48 @@
       "title": "Asisten Laboratorium — Rekayasa Perangkat Lunak & Komputasi Cerdas",
       "company": "Institut Teknologi Perusahaan Listrik Negara (ITPLN)",
       "duration": "Juli 2023 – Januari 2025",
-      "desc": "Memberikan pembelajaran praktis kepada lebih dari 100 mahasiswa setiap semester, serta menangani operasional perangkat lunak dan keras. Membantu dosen selama sesi praktikum, melakukan pemeliharaan aplikasi, dan menangani troubleshooting perangkat keras. Aktif berkontribusi dalam pengelolaan laboratorium serta berkolaborasi dalam proyek R&D terkait Rekayasa Perangkat Lunak dan Komputasi Cerdas."
+      "desc": "Mengawasi sesi praktikum, membantu dosen, dan memberikan pembelajaran praktis kepada mahasiswa. Merawat perangkat lunak laboratorium (instalasi dan verifikasi lisensi) serta perangkat keras PC (pengecekan dan troubleshooting). Berkolaborasi dalam riset dan pengembangan terkait Rekayasa Perangkat Lunak dan Komputasi Cerdas."
     },
     {
       "id": 2,
       "title": "Koordinator — Laboratorium Rekayasa Perangkat Lunak",
       "company": "Institut Teknologi Perusahaan Listrik Negara (ITPLN)",
-      "duration": "Januari 2025 – Sekarang",
-      "desc": "Memimpin tim beranggotakan 24 asisten laboratorium, mengawasi operasional harian, penjadwalan, dan kegiatan supervisi untuk memastikan lingkungan belajar dan riset yang efektif. Membimbing mahasiswa dalam proyek web, mobile, dan machine learning, serta mengoordinasikan kegiatan penelitian untuk menjaga kualitas dan inovasi akademik di laboratorium."
+      "duration": "Januari 2025 – Februari 2026",
+      "desc": "Memimpin dan mengawasi tim beranggotakan 24 asisten laboratorium serta operasional harian laboratorium. Memfasilitasi sesi praktikum untuk lebih dari 100 mahasiswa setiap semester, mengatur jadwal dan agenda agar seluruh program berjalan tepat waktu, dan mengoordinasikan kegiatan riset dan akademik di bidang Web Development, Mobile Development, dan Machine Learning. Membimbing anggota lab dalam menyelesaikan proyek akademik dan teknis."
     },
     {
       "id": 3,
-      "title": "Magang IT Support & Web Developer",
+      "title": "Magang IT Support",
       "company": "PLN Icon Plus",
       "duration": "Februari 2025 – Maret 2025",
-      "desc": "Mengembangkan dashboard IT Support menggunakan CodeIgniter 4 serta membantu departemen IT dalam tugas troubleshooting dan pemeliharaan sistem."
+      "desc": "Mengembangkan IT Support Dashboard menggunakan CodeIgniter 4 untuk meningkatkan pemantauan internal. Melakukan troubleshooting perangkat keras, perangkat lunak, dan jaringan, serta mendukung operasional IT harian termasuk dokumentasi masalah dan solusi teknis."
     },
     {
       "id": 4,
       "title": "Magang Data Analyst",
-      "company": "Kementerian Kehutanan Indonesia",
+      "company": "Kementerian Kehutanan Republik Indonesia",
       "duration": "Agustus 2025 – November 2025",
-      "desc": "Mendukung publikasi SAKU Vol. II (JEJAK RIMBA) dengan melakukan pembersihan, analisis, dan visualisasi data lingkungan serta kehutanan untuk mendukung pengambilan keputusan berbasis data."
+      "desc": "Mengelola dan mengolah data lingkungan dan kehutanan untuk publikasi SAKU Vol. II (JEJAK RIMBA) sebagai bagian dari tim publikasi. Membersihkan, menyeleksi, dan memperbarui lebih dari 1000 dataset lama agar publikasi tetap akurat dan konsisten, serta membantu menyusun laporan analitis untuk mendukung pengambilan keputusan."
+    }
+  ],
+  "achievements": [
+    {
+      "id": 1,
+      "title": "Co-Chair — International Conference on Advanced Technologies in Energy and Informatics (ICATEI)",
+      "year": "2025",
+      "desc": "Mendampingi Session Chair dalam mengelola sesi paralel, memfasilitasi tanya jawab, dan menyusun dokumentasi sesi untuk panitia penyelenggara."
+    },
+    {
+      "id": 2,
+      "title": "Panitia Workshop — Building Websites Without Coding: SEO Tips and Tricks",
+      "year": "2024",
+      "desc": "Berkolaborasi dengan pembicara dan memfasilitasi keterlibatan peserta."
+    },
+    {
+      "id": 3,
+      "title": "Panitia Workshop — Prompt Engineering: Craft the Perfect Prompt",
+      "year": "2024",
+      "desc": "Mengoordinasikan peserta dan logistik workshop akademik tentang AI untuk efisiensi riset."
     }
   ]
 }
