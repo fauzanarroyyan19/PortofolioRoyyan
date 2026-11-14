@@ -1,22 +1,21 @@
 "use client";
 import { motion } from "framer-motion";
+import projects from "../data/Projects";
 import { useLanguage } from "../context/LanguageContext";
-import idData from "../locales/id.json";
-import enData from "../locales/en.json";
 
 export default function Projects() {
   const { lang } = useLanguage();
-  const data = lang === "ID" ? idData : enData;
 
-  // Proyek diambil dari file JSON bahasa (locales), bukan dari ../data/Projects
-  const projects = data.projects ?? [];
-
-  // Jumlah minimal kartu di grid. Slot kosong hanya muncul kalau proyek kurang dari ini.
+  // Minimal kartu di grid; slot kosong hanya muncul kalau proyek kurang dari ini
   const totalSlots = 3;
   const emptySlots = Math.max(0, totalSlots - projects.length);
 
-  // Tombol hanya tampil kalau link-nya sungguhan (bukan "#" atau kosong)
-  const isValidLink = (url) => Boolean(url) && url !== "#" && !url.endsWith("...");
+  // desc bisa berupa string biasa atau objek { ID, EN }
+  const getDesc = (desc) =>
+    typeof desc === "string" ? desc : desc[lang] ?? desc.EN ?? desc.ID ?? "";
+
+  // Tombol hanya tampil kalau link-nya sungguhan
+  const isValidLink = (url) => Boolean(url) && url !== "#";
 
   return (
     <section id="projects" className="px-6 md:px-10 py-12">
@@ -25,7 +24,6 @@ export default function Projects() {
       </h2>
 
       <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-        {/* Semua proyek dari JSON */}
         {projects.map((p) => (
           <motion.div
             key={p.id}
@@ -43,7 +41,7 @@ export default function Projects() {
                 {p.tech.join(" • ")}
               </div>
               <h3 className="mt-2 font-semibold text-lg">{p.title}</h3>
-              <p className="mt-2 text-gray-400 text-sm">{p.desc}</p>
+              <p className="mt-2 text-gray-400 text-sm">{getDesc(p.desc)}</p>
               <div className="mt-3 flex gap-2">
                 {isValidLink(p.live) && (
                   <a
@@ -70,7 +68,6 @@ export default function Projects() {
           </motion.div>
         ))}
 
-        {/* Slot kosong, hanya kalau proyek kurang dari totalSlots */}
         {Array.from({ length: emptySlots }).map((_, i) => (
           <motion.div
             key={`soon-${i}`}

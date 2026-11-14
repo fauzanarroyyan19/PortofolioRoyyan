@@ -22,60 +22,6 @@
     "subtitle": "Membangun situs web responsif dan solusi berbasis data yang andal.",
     "contactMe": "Hubungi saya"
   },
-  "projects": [
-    {
-      "id": 4,
-      "title": "Portal Pengajuan Kredit PT. JKL",
-      "tech": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "LocalStorage"
-      ],
-      "desc": "Web sederhana untuk mendigitalisasi pengajuan kredit kendaraan dengan alur multi-peran (Sales Dealer, Marketing, Atasan Marketing, Admin Backoffice, Konsumen), mulai dari pengajuan hingga pencairan dana. Data disimpan di localStorage.",
-      "image": "/projects/jkl-kredit.png",
-      "live": "https://project-pdp-fauzan-ar-royyan.vercel.app/",
-      "repo": "https://github.com/fauzanarroyyan19/ProjectPDP_FauzanArRoyyan.git"
-    },
-    {
-      "id": 1,
-      "title": "FaceGuard-AI",
-      "tech": [
-        "Figma"
-      ],
-      "desc": "Prototype sistem proteksi identitas berbasis AI & anti-deepfake. Dibuat di Figma untuk memvisualisasikan fitur dan UI.",
-      "image": "/projects/faceguard.png",
-      "live": "https://www.figma.com/proto/nWVaBgK2d2v8KGGhHwudbI/PROJEK--TEKNO?page-id=1%3A11&node-id=7-129&p=f&viewport=3411%2C-860%2C0.48&t=02T3dcZONsmI9CpX-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=58%3A80",
-      "repo": "#"
-    },
-    {
-      "id": 2,
-      "title": "ProtectX",
-      "tech": [
-        "React",
-        "Express",
-        "Discord.js",
-        "Node.js"
-      ],
-      "desc": "Bot anti-crash untuk Discord",
-      "image": "/projects/project2.png",
-      "live": "#",
-      "repo": "#"
-    },
-    {
-      "id": 3,
-      "title": "Kahoot Answers Viewer",
-      "tech": [
-        "CSS",
-        "Express",
-        "Node.js"
-      ],
-      "desc": "Get answers to your kahoot quiz",
-      "image": "/projects/project3.png",
-      "live": "#",
-      "repo": "#"
-    }
-  ],
   "skills": {
     "langsTitle": "Bahasa Pemrograman",
     "toolsTitle": "Alat",
