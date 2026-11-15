@@ -59,6 +59,18 @@ const projects = [
     live: "",
     repo: "https://github.com/fauzanarroyyan19/voting-blockchain",
   },
+  {
+    id: 6,
+    title: "HandDT – Hand Detection & Gesture Interaction",
+    tech: ["HTML5", "CSS3", "JavaScript", "MediaPipe Hands", "Canvas API"],
+    desc: {
+      ID: "Dashboard interaktif berbasis browser yang mendeteksi hingga dua tangan secara real-time melalui webcam menggunakan MediaPipe Hands. Kenali berbagai gestur untuk menggambar di kanvas virtual, memilih warna, membatalkan atau menghapus gambar, dan mengunduh hasilnya. Pemrosesan berjalan di browser sehingga video webcam tidak dikirim ke server.",
+      EN: "An interactive browser-based dashboard that uses MediaPipe Hands to detect up to two hands in real time through a webcam. Recognize gestures to draw on a virtual canvas, choose colors, undo or clear strokes, and download the result. Processing runs in the browser, so webcam video is not sent to a server.",
+    },
+    image: "/projects/handdt.svg",
+    live: "https://handflow-studio.vercel.app/",
+    repo: "https://github.com/fauzanarroyyan19/HandDT",
+  },
 ];
 
 export default projects;
