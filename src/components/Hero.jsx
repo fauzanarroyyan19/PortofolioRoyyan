@@ -1,8 +1,13 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import profilePic from "/public/profile.png";
 import { ArrowDown, ArrowUpRight, MapPin } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
+
+const profilePhotos = [
+  { src: "/profile/profile-1-framed.png", alt: "Fauzan AR Royyan" },
+  { src: "/profile/profile-2-framed.png", alt: "Fauzan AR Royyan with graduation bouquet" },
+  { src: "/profile/profile-3-framed.png", alt: "Fauzan AR Royyan giving a thumbs up" },
+];
 
 export default function Hero() {
   const { lang } = useLanguage();
@@ -62,10 +67,17 @@ export default function Hero() {
         </motion.div>
 
         <motion.div initial={{ opacity: 0, scale: .96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: .8, delay: .12 }} className="order-1 mx-auto w-full max-w-[360px] md:order-2 md:max-w-[440px]">
-          <div className="relative aspect-[.92] overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-violet-400/15 via-[#171520] to-fuchsia-400/10 p-3 shadow-2xl shadow-violet-950/30">
+          <div className="relative aspect-[1.1] overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-violet-400/15 via-[#171520] to-fuchsia-400/10 p-3 shadow-2xl shadow-violet-950/30">
             <div className="absolute inset-3 rounded-[1.5rem] border border-white/5" />
             <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-violet-400/20 blur-3xl" />
-            <Image src={profilePic} alt="Fauzan AR Royyan" fill priority sizes="(max-width: 768px) 90vw, 440px" className="relative z-10 object-contain object-bottom grayscale transition duration-700 hover:grayscale-0" />
+            <div className="absolute inset-3 bottom-24 z-10 grid grid-cols-3 gap-2 sm:gap-3">
+              {profilePhotos.map((photo, index) => (
+                <div key={photo.alt} className="relative min-w-0 overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-white/[.06] to-violet-300/[.04]">
+                  <Image src={photo.src} alt={photo.alt} fill priority={index === 0} sizes="(max-width: 768px) 28vw, 140px" className="object-contain object-bottom grayscale transition duration-700 hover:grayscale-0" />
+                  <span className="absolute left-2 top-2 rounded-md border border-white/10 bg-black/35 px-1.5 py-0.5 font-mono text-[.58rem] text-white/70">0{index + 1}</span>
+                </div>
+              ))}
+            </div>
             <div className="absolute bottom-6 left-6 right-6 z-20 flex items-center justify-between rounded-2xl border border-white/10 bg-[#0b0b12]/75 px-4 py-3 backdrop-blur-xl">
               <div><p className="text-xs text-slate-400">Informatics Engineering</p><p className="mt-0.5 text-sm font-semibold text-white">GPA 3.72 / 4.00</p></div>
               <span className="rounded-lg bg-violet-300/10 px-2.5 py-1 text-xs font-semibold text-violet-200">ITPLN</span>
