@@ -1,88 +1,63 @@
-"use client";
-import Link from "next/link";
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 
 export default function Navbar() {
   const { lang, changeLanguage } = useLanguage();
-  const [open, setOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [languageOpen, setLanguageOpen] = useState(false);
 
-  const text = {
-    EN: [
-      { href: "#projects", label: "#projects" },
-      { href: "#skills", label: "#skills" },
-      { href: "#experience", label: "experience" },
-      { href: "#contacts", label: "#contacts" },
-    ],
-    ID: [
-      { href: "#projects", label: "#proyek" },
-      { href: "#skills", label: "#keahlian" },
-      { href: "#experience", label: "#pengalaman-saya" },
-      { href: "#contacts", label: "#kontak" },
-    ],
+  const links = lang === "ID"
+    ? [["#projects", "Proyek"], ["#skills", "Keahlian"], ["#experience", "Pengalaman"], ["#contacts", "Kontak"]]
+    : [["#projects", "Projects"], ["#skills", "Skills"], ["#experience", "Experience"], ["#contacts", "Contact"]];
+
+  const selectLanguage = (code) => {
+    changeLanguage(code);
+    setLanguageOpen(false);
+    setMenuOpen(false);
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-[#0f0f16]/80 backdrop-blur-md border-b border-gray-800 px-6 md:px-12 py-5 flex items-center justify-between shadow-[0_0_15px_rgba(168,85,247,0.15)]">
-      {/* Logo */}
-      <div className="flex items-center gap-3">
-        <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center text-black font-bold text-xl shadow-lg shadow-purple-500/30">
-          R
-        </div>
-        <span className="font-mono text-lg text-gray-200 tracking-wide">
-          Royyan
-        </span>
-      </div>
+    <header className="fixed inset-x-0 top-0 z-50 px-4 pt-3 sm:px-6">
+      <nav className="site-nav mx-auto flex max-w-6xl items-center justify-between rounded-2xl px-4 py-3 sm:px-6">
+        <a href="#home" className="flex items-center gap-3" aria-label="Royyan home">
+          <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-violet-400 to-fuchsia-500 font-mono text-lg font-bold text-white shadow-lg shadow-violet-500/20">R</span>
+          <span className="font-semibold tracking-tight text-white">Royyan<span className="text-violet-300">.</span></span>
+        </a>
 
-      {/* Right Section (Links + Language Selector) */}
-      <div className="flex items-center gap-6 font-medium">
-        {/* Navigation Links */}
-        <div className="hidden md:flex items-center gap-8 text-gray-300">
-          {text[lang].map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="hover:text-purple-400 transition-all duration-300 relative group"
-            >
-              {link.label}
-              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-purple-500 transition-all duration-300 group-hover:w-full"></span>
-            </Link>
+        <div className="hidden items-center gap-1 md:flex">
+          {links.map(([href, label]) => (
+            <a key={href} href={href} className="nav-link">{label}</a>
           ))}
         </div>
 
-        {/* Language Selector */}
-        <div className="relative">
-          <button
-            onClick={() => setOpen(!open)}
-            className="flex items-center gap-2 text-gray-300 font-medium border border-gray-700 hover:border-purple-500 px-3 py-2 rounded-lg transition-all duration-300 hover:text-purple-400"
-          >
-            {lang} <ChevronDown size={16} />
+        <div className="flex items-center gap-2">
+          <div className="relative">
+            <button type="button" onClick={() => setLanguageOpen(!languageOpen)} className="nav-control" aria-expanded={languageOpen} aria-label="Select language">
+              {lang} <ChevronDown size={15} className={languageOpen ? "rotate-180 transition-transform" : "transition-transform"} />
+            </button>
+            {languageOpen && (
+              <div className="nav-dropdown">
+                {[{ code: "EN", label: "English" }, { code: "ID", label: "Indonesia" }].map((item) => (
+                  <button key={item.code} type="button" onClick={() => selectLanguage(item.code)} className={`w-full px-4 py-2.5 text-left text-sm transition hover:bg-white/5 ${lang === item.code ? "text-violet-300" : "text-slate-300"}`}>
+                    <span className="mr-2 text-xs text-slate-500">{item.code}</span>{item.label}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+          <button type="button" onClick={() => setMenuOpen(!menuOpen)} className="nav-control md:hidden" aria-label={menuOpen ? "Close menu" : "Open menu"} aria-expanded={menuOpen}>
+            {menuOpen ? <X size={18} /> : <Menu size={18} />}
           </button>
-
-          {open && (
-            <div className="absolute right-0 mt-2 w-32 bg-[#1a1b20] border border-gray-700 rounded-md shadow-lg overflow-hidden backdrop-blur-md">
-              {[
-                { code: "EN", label: "🇬🇧 English" },
-                { code: "ID", label: "🇮🇩 Indonesia" },
-              ].map((item) => (
-                <button
-                  key={item.code}
-                  onClick={() => {
-                    changeLanguage(item.code); // pake context
-                    setOpen(false);
-                  }}
-                  className={`block w-full text-left px-4 py-2 text-gray-300 hover:bg-purple-600/20 hover:text-purple-400 transition-all ${
-                    lang === item.code ? "bg-purple-600/10 text-purple-400" : ""
-                  }`}
-                >
-                  {item.label}
-                </button>
-              ))}
-            </div>
-          )}
         </div>
-      </div>
-    </nav>
+      </nav>
+      {menuOpen && (
+        <div className="site-nav mx-auto mt-2 max-w-6xl rounded-2xl p-2 md:hidden">
+          {links.map(([href, label]) => (
+            <a key={href} href={href} onClick={() => setMenuOpen(false)} className="block rounded-xl px-4 py-3 text-sm text-slate-300 transition hover:bg-white/5 hover:text-white">{label}</a>
+          ))}
+        </div>
+      )}
+    </header>
   );
 }

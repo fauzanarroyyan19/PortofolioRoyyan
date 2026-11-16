@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="20" x2="1120" y2="700" gradientUnits="userSpaceOnUse"><stop stop-color="#18253b"/><stop offset="1" stop-color="#0b101b"/></linearGradient>
+    <linearGradient id="accent" x1="280" y1="230" x2="800" y2="550" gradientUnits="userSpaceOnUse"><stop stop-color="#67e8f9"/><stop offset="1" stop-color="#60a5fa"/></linearGradient>
+  </defs>
+  <rect width="1200" height="720" rx="28" fill="url(#bg)"/>
+  <circle cx="970" cy="160" r="190" fill="#2563eb" opacity=".12"/>
+  <rect x="130" y="95" width="940" height="530" rx="22" fill="#0f172a" stroke="#334155" stroke-width="3"/>
+  <path d="M152 95h896a22 22 0 0 1 22 22v54H130v-54a22 22 0 0 1 22-22Z" fill="#1e293b"/>
+  <circle cx="165" cy="134" r="7" fill="#fb7185"/><circle cx="191" cy="134" r="7" fill="#fbbf24"/><circle cx="217" cy="134" r="7" fill="#34d399"/>
+  <text x="600" y="140" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">PT. JKL · CREDIT APPLICATION PORTAL</text>
+  <rect x="160" y="198" width="188" height="397" rx="14" fill="#111c30"/>
+  <rect x="180" y="222" width="42" height="42" rx="12" fill="url(#accent)"/>
+  <text x="201" y="250" fill="#082f49" font-family="Arial,sans-serif" font-size="18" font-weight="700" text-anchor="middle">JKL</text>
+  <rect x="180" y="292" width="145" height="34" rx="9" fill="#23344e"/><rect x="192" y="305" width="90" height="7" rx="3.5" fill="#67e8f9"/>
+  <rect x="192" y="350" width="103" height="7" rx="3.5" fill="#64748b"/><rect x="192" y="390" width="119" height="7" rx="3.5" fill="#64748b"/><rect x="192" y="430" width="88" height="7" rx="3.5" fill="#64748b"/><rect x="192" y="470" width="112" height="7" rx="3.5" fill="#64748b"/>
+  <text x="384" y="234" fill="#f8fafc" font-family="Arial,sans-serif" font-size="25" font-weight="700">Credit applications</text>
+  <text x="384" y="260" fill="#94a3b8" font-family="Arial,sans-serif" font-size="14">Track submissions from review to disbursement</text>
+  <rect x="384" y="285" width="194" height="88" rx="13" fill="#17243a" stroke="#263750"/><text x="402" y="313" fill="#94a3b8" font-family="Arial,sans-serif" font-size="12">TOTAL APPLICATIONS</text><text x="402" y="351" fill="#f8fafc" font-family="Arial,sans-serif" font-size="30" font-weight="700">128</text>
+  <rect x="594" y="285" width="194" height="88" rx="13" fill="#17243a" stroke="#263750"/><text x="612" y="313" fill="#94a3b8" font-family="Arial,sans-serif" font-size="12">UNDER REVIEW</text><text x="612" y="351" fill="#fbbf24" font-family="Arial,sans-serif" font-size="30" font-weight="700">24</text>
+  <rect x="804" y="285" width="230" height="88" rx="13" fill="#17243a" stroke="#263750"/><text x="822" y="313" fill="#94a3b8" font-family="Arial,sans-serif" font-size="12">APPROVED</text><text x="822" y="351" fill="#6ee7b7" font-family="Arial,sans-serif" font-size="30" font-weight="700">86</text>
+  <rect x="384" y="395" width="650" height="176" rx="13" fill="#121d30" stroke="#263750"/>
+  <text x="408" y="428" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="14" font-weight="700">RECENT APPLICATIONS</text>
+  <path d="M408 448h602M408 489h602M408 530h602" stroke="#263750"/>
+  <text x="408" y="475" fill="#94a3b8" font-family="Arial,sans-serif" font-size="12">Customer</text><text x="630" y="475" fill="#94a3b8" font-family="Arial,sans-serif" font-size="12">Role</text><text x="804" y="475" fill="#94a3b8" font-family="Arial,sans-serif" font-size="12">Status</text>
+  <text x="408" y="516" fill="#e2e8f0" font-family="Arial,sans-serif" font-size="13">Application #JKL-0248</text><text x="630" y="516" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="13">Marketing</text><rect x="804" y="499" width="86" height="24" rx="12" fill="#164e63"/><text x="847" y="515" fill="#67e8f9" font-family="Arial,sans-serif" font-size="11" text-anchor="middle">In review</text>
+  <text x="600" y="674" fill="#67e8f9" font-family="Arial,sans-serif" font-size="17" letter-spacing="4" text-anchor="middle">VEHICLE CREDIT WORKFLOW</text>
+</svg>

@@ -1,0 +1,282 @@
+const projectDetails = {
+  1: {
+    ID: {
+      title: "Portal Pengajuan Kredit PT. JKL",
+      eyebrow: "Studi Kasus · Aplikasi Web",
+      background: "Pengajuan kredit kendaraan melibatkan beberapa peran dan dokumen, dimulai dari Sales Dealer dan diteruskan melalui proses pemeriksaan, persetujuan, kontrak, tanda tangan konsumen, hingga pencairan dana.",
+      goals: [
+        "Mendemonstrasikan alur pengajuan kredit kendaraan dari pengisian formulir hingga pencairan dana.",
+        "Menyediakan alur kerja untuk Sales Dealer, Marketing, Atasan Marketing, Admin Backoffice, dan Konsumen.",
+        "Menampilkan status pengajuan, dokumen, dan riwayat proses dalam satu aplikasi sederhana.",
+      ],
+      process: [
+        "Sales Dealer mengisi data pengajuan dan mengunggah empat dokumen yang diperlukan.",
+        "Marketing memeriksa pengajuan dan meneruskannya kepada Atasan Marketing untuk disetujui atau ditolak; penolakan harus disertai catatan.",
+        "Admin Backoffice membuat kontrak dan PO. Konsumen menandatangani dokumen, lalu Admin Backoffice menyelesaikan proses dengan pencairan dana.",
+        "Membangun aplikasi statis dengan HTML, CSS, dan JavaScript, lalu menyimpan data di LocalStorage browser.",
+      ],
+      outcome: "Hasilnya adalah demo alur pengajuan kredit multi-peran yang dapat dibuka langsung melalui index.html tanpa instalasi atau server. Aplikasi belum memakai database atau autentikasi; pemilihan role bebas, dan data tersimpan hanya di LocalStorage. Estimasi angsuran menggunakan asumsi bunga flat 9% per tahun, bukan perhitungan resmi dari lembaga pembiayaan.",
+      preview: "Screenshot portal pengajuan kredit PT. JKL",
+      screenshots: [{ title: "Dashboard pengajuan kredit", description: "Tampilan portal yang memperlihatkan daftar pengajuan, role yang tersedia, data konsumen dan kendaraan, rincian pinjaman, dokumen terunggah, serta status proses.", orientation: "landscape" }],
+    },
+    EN: {
+      title: "PT. JKL Credit Application Portal",
+      eyebrow: "Case Study · Web Application",
+      background: "Vehicle credit applications involve several roles and documents, beginning with Dealer Sales and moving through review, approval, contract creation, customer signing, and fund disbursement. ",
+      goals: [
+        "Demonstrate the vehicle credit application flow from form submission through fund disbursement.",
+        "Provide workflows for Dealer Sales, Marketing, Marketing Supervisor, Back-office Admin, and Customer.",
+        "Show application status, documents, and process history in one simple app.",
+      ],
+      process: [
+        "Dealer Sales completes the application and uploads the four required documents.",
+        "Marketing reviews and forwards the application to the Marketing Supervisor for approval or rejection; a rejection requires a note.",
+        "Back-office Admin creates the contract and PO. The customer signs the documents, then Back-office Admin completes the process by disbursing the funds.",
+        "Built the static app with HTML, CSS, and JavaScript, and stored data in browser LocalStorage.",
+      ],
+      outcome: "The result is a multi-role credit application demo that can be opened directly through index.html without installation or a server. It has no database or authentication; roles can be selected freely, and data is stored only in LocalStorage. The installment estimate assumes a 9% flat annual interest rate and is not an official lender calculation.",
+      preview: "PT. JKL credit application portal screenshot",
+      screenshots: [{ title: "Credit application dashboard", description: "The portal view showing the application list, available roles, customer and vehicle details, loan information, uploaded documents, and process status.", orientation: "landscape" }],
+    },
+  },
+  2: {
+    ID: {
+      title: "FaceGuard-AI",
+      eyebrow: "Studi Kasus · Prototype UI/UX",
+      background: "Deepfake dan penyalahgunaan identitas menjadi tantangan di ruang digital. FaceGuard-AI mengeksplorasi konsep perlindungan identitas berbantuan AI melalui sebuah prototype antarmuka.",
+      goals: [
+        "Memvisualisasikan konsep sistem proteksi identitas dan anti-deepfake.",
+        "Menyusun rancangan fitur dan antarmuka agar gagasan produk mudah dipahami.",
+        "Menyajikan prototype yang dapat ditinjau sebelum implementasi produk.",
+      ],
+      process: [
+        "Merumuskan konsep produk dan alur penggunaan utama.",
+        "Menyusun rancangan layar dan komponen antarmuka di Figma.",
+        "Membuat prototype interaktif untuk memperlihatkan konsep UI.",
+      ],
+      outcome: "Hasil akhirnya adalah prototype Figma untuk mengomunikasikan konsep dan antarmuka FaceGuard-AI. Prototype ini berfokus pada visualisasi desain; implementasi deteksi AI tidak termasuk dalam karya yang ditampilkan.",
+      preview: "Preview visual FaceGuard-AI",
+      galleryGroups: [
+        { title: "Alur awal aplikasi", indices: [0, 1, 2], columns: 3 },
+        { title: "Deteksi wajah", indices: [3, 4], columns: 2 },
+        { title: "Perlindungan privasi", indices: [5, 6], columns: 2 },
+        { title: "Deteksi suara", indices: [7, 8], columns: 2 },
+      ],
+      screenshots: [
+        { title: "Halaman FaceGuard AI", description: "Layar masuk prototype dengan opsi autentikasi melalui Facebook, Google, Apple, atau kata sandi." },
+        { title: "Halaman utama", description: "Dashboard utama yang merangkum tiga fitur: DeepFake Detector, Privacy Protector, dan Sound Detector AI, serta tombol untuk memulai deteksi." },
+        { title: "Halaman registrasi", description: "Formulir pendaftaran yang menampilkan isian nama, kata sandi, tanggal lahir, email, nomor telepon, dan jenis kelamin." },
+        { title: "Fitur deteksi wajah", description: "Layar untuk memilih media dan memulai pemeriksaan. Prototype menampilkan jenis analisis yang direncanakan, seperti deteksi deepfake, pemeriksaan metadata, dan reverse image search." },
+        { title: "Hasil deteksi wajah", description: "Contoh tampilan hasil analisis, termasuk indikator kemungkinan deepfake dan rincian temuan. Angka pada layar merupakan contoh pada prototype, bukan klaim akurasi model yang telah diuji." },
+        { title: "Halaman Privacy Protector", description: "Pengguna memilih media yang ingin dilindungi dan tingkat perlindungan sebelum menjalankan alur Privacy Protector." },
+        { title: "Hasil perlindungan privasi", description: "Prototype memperlihatkan perbandingan media original dan protected beserta ringkasan status perlindungan dan opsi untuk mengunduh atau menyalin tautan." },
+        { title: "Halaman Sound Detector AI", description: "Layar untuk mengunggah audio atau merekam langsung, lalu memilih jenis pemeriksaan seperti voice cloning dan synthetic speech." },
+        { title: "Hasil analisis suara", description: "Contoh layar hasil yang merangkum indikator voice cloning, synthetic speech, audio deepfake, dan keaslian emosi. Nilai yang tampil adalah contoh UI prototype." },
+      ],
+    },
+    EN: {
+      title: "FaceGuard-AI",
+      eyebrow: "Case Study · UI/UX Prototype",
+      background: "Deepfakes and identity misuse are growing challenges in digital spaces. FaceGuard-AI explores an AI-assisted identity protection concept through an interface prototype.",
+      goals: [
+        "Visualize an identity protection and anti-deepfake system concept.",
+        "Organize the proposed features and interface so the product idea is easy to understand.",
+        "Present a prototype that can be reviewed before product implementation.",
+      ],
+      process: [
+        "Defined the product concept and its primary user flow.",
+        "Designed screens and interface components in Figma.",
+        "Created an interactive prototype to communicate the UI concept.",
+      ],
+      outcome: "The result is a Figma prototype that communicates the FaceGuard-AI concept and interface. It focuses on design visualization; AI detection implementation is outside the scope of the showcased work.",
+      preview: "FaceGuard-AI visual preview",
+      galleryGroups: [
+        { title: "Getting started", indices: [0, 1, 2], columns: 3 },
+        { title: "Face detection", indices: [3, 4], columns: 2 },
+        { title: "Privacy protection", indices: [5, 6], columns: 2 },
+        { title: "Sound detection", indices: [7, 8], columns: 2 },
+      ],
+      screenshots: [
+        { title: "FaceGuard AI login", description: "The prototype's login screen with authentication options for Facebook, Google, Apple, or password." },
+        { title: "Home page", description: "The main dashboard introduces DeepFake Detector, Privacy Protector, and Sound Detector AI, with a button to start detection." },
+        { title: "Registration page", description: "The registration form includes fields for name, password, date of birth, email, phone number, and gender." },
+        { title: "Face detection feature", description: "The screen for choosing media and starting a check. The prototype lists planned analyses such as deepfake detection, metadata analysis, and reverse image search." },
+        { title: "Face detection results", description: "An example results screen with a possible deepfake indicator and finding details. The displayed figures are prototype examples, not claims of tested model accuracy." },
+        { title: "Privacy Protector page", description: "Users choose media to protect and select a protection level before starting the Privacy Protector flow." },
+        { title: "Privacy protection results", description: "The prototype shows an original-versus-protected comparison, a protection summary, and options to download or copy a link." },
+        { title: "Sound Detector AI page", description: "The screen supports audio upload or live recording, then lets users choose checks such as voice cloning and synthetic speech." },
+        { title: "Audio analysis results", description: "An example results screen summarizing voice cloning, synthetic speech, audio deepfake, and emotion authenticity indicators. The values shown are prototype UI examples." },
+      ],
+    },
+  },
+  5: {
+    ID: {
+      title: "Blockchain-Based Voting System",
+      eyebrow: "Studi Kasus · Web3 / DApp",
+      background: "Sistem voting memerlukan aturan yang jelas serta catatan hasil yang transparan. Proyek ini mengeksplorasi bagaimana smart contract dapat mengatur proses pemilihan dan mencatat suara pada blockchain lokal.",
+      goals: [
+        "Membangun alur voting dengan validasi suara melalui smart contract.",
+        "Membatasi setiap alamat wallet agar hanya dapat memilih satu kali.",
+        "Menyediakan mode pemilih dan admin untuk melihat kandidat, statistik, serta aktivitas pemilihan.",
+      ],
+      process: [
+        "Menerapkan aturan voting dan pengelolaan kandidat di Solidity.",
+        "Menjalankan dan menguji kontrak pada jaringan lokal Hardhat.",
+        "Menghubungkan antarmuka React/Vite ke kontrak menggunakan Ethers.js dan MetaMask.",
+      ],
+      outcome: "Aplikasi mendemonstrasikan voting, pengelolaan kandidat, dan pemantauan hasil pada jaringan Hardhat lokal. Proyek belum dideploy ke blockchain publik; alamat wallet dan transaksi di jaringan publik dapat terlihat oleh siapa pun.",
+      preview: "Preview visual dashboard voting blockchain",
+    },
+    EN: {
+      title: "Blockchain-Based Voting System",
+      eyebrow: "Case Study · Web3 / DApp",
+      background: "Voting systems need clear rules and transparent records. This project explores how smart contracts can govern an election and record votes on a local blockchain.",
+      goals: [
+        "Build a voting flow with vote validation handled by a smart contract.",
+        "Limit each wallet address to one vote.",
+        "Provide voter and admin modes for candidates, statistics, and election activity.",
+      ],
+      process: [
+        "Implemented voting rules and candidate management in Solidity.",
+        "Ran and tested the contract on a local Hardhat network.",
+        "Connected the React/Vite interface to the contract with Ethers.js and MetaMask.",
+      ],
+      outcome: "The application demonstrates voting, candidate management, and results monitoring on a local Hardhat network. It has not been deployed to a public blockchain; wallet addresses and transactions on a public network can be visible to anyone.",
+      preview: "Blockchain voting dashboard visual preview",
+    },
+  },
+  6: {
+    ID: {
+      title: "HandDT – Deteksi Tangan & Interaksi Gestur",
+      eyebrow: "Studi Kasus · Computer Vision",
+      background: "Interaksi dengan komputer umumnya bergantung pada perangkat fisik seperti mouse atau layar sentuh. HandDT mengeksplorasi kontrol gestur tangan melalui webcam langsung di browser.",
+      goals: [
+        "Mendeteksi hingga dua tangan dan landmark-nya secara real-time.",
+        "Mengenali beberapa gestur tangan untuk interaksi tanpa sentuhan.",
+        "Menggunakan gerakan jari untuk menggambar dan memilih warna pada kanvas virtual.",
+      ],
+      process: [
+        "Menggunakan MediaPipe Hands untuk mendeteksi landmark tangan dari webcam.",
+        "Memproses posisi jari di JavaScript untuk menghitung jari dan mengenali gestur.",
+        "Menghubungkan gestur dengan Canvas API untuk menggambar, memilih warna, undo, clear, dan mengunduh PNG.",
+      ],
+      outcome: "Dashboard web menampilkan deteksi tangan, statistik gestur, serta kanvas interaktif. Pemrosesan berjalan di sisi browser dan video webcam tidak diunggah ke backend. Demo dapat dicoba melalui tautan live.",
+      preview: "Preview visual dashboard HandDT",
+    },
+    EN: {
+      title: "HandDT – Hand Detection & Gesture Interaction",
+      eyebrow: "Case Study · Computer Vision",
+      background: "Computer interaction often depends on physical devices such as a mouse or touchscreen. HandDT explores webcam-based hand gesture control directly in the browser.",
+      goals: [
+        "Detect up to two hands and their landmarks in real time.",
+        "Recognize several hand gestures for touch-free interaction.",
+        "Use finger movement to draw and select colors on a virtual canvas.",
+      ],
+      process: [
+        "Used MediaPipe Hands to detect hand landmarks from the webcam.",
+        "Processed finger positions in JavaScript to count fingers and recognize gestures.",
+        "Connected gestures to the Canvas API for drawing, color selection, undo, clear, and PNG download.",
+      ],
+      outcome: "The web dashboard combines hand detection, gesture statistics, and an interactive canvas. Processing runs client-side, and webcam video is not uploaded to a backend. The live demo is available from the project link.",
+      preview: "HandDT dashboard visual preview",
+    },
+  },
+};
+
+Object.assign(projectDetails[6].ID, {
+  title: "HandDT - Deteksi Tangan & Interaksi Gestur",
+  background: "HandDT mengeksplorasi interaksi manusia dan komputer tanpa sentuhan. Pengguna dapat memakai webcam untuk mendeteksi gerakan tangan dan berinteraksi dengan dashboard serta kanvas gambar langsung di browser.",
+  goals: [
+    "Mendeteksi dan melacak hingga dua tangan, jumlah jari terangkat, dan landmark tangan secara real-time.",
+    "Mengenali gestur seperti Fist, Peace, Love You, Rock, OK, Thumbs Up, Call Me, dan Open Hand.",
+    "Memungkinkan pengguna menggambar dan memilih warna pada kanvas virtual dengan gerakan jari.",
+  ],
+  process: [
+    "Mengambil input webcam dan mendeteksi landmark tangan menggunakan MediaPipe Hands.",
+    "Memproses posisi landmark dengan JavaScript untuk menghitung jari dan mengidentifikasi pola gestur.",
+    "Memakai telunjuk kanan untuk menggambar dan telunjuk kiri untuk memilih warna; palet warna juga dapat dipilih dengan klik.",
+    "Menghubungkan aksi ke Canvas API untuk menggambar, undo, menghapus kanvas, dan mengunduh hasil sebagai PNG.",
+  ],
+  outcome: "Hasilnya adalah dashboard responsif dengan preview kamera, statistik deteksi, panduan gestur, dan kanvas interaktif. Pemrosesan berjalan di browser; video webcam tidak diunggah ke backend. Kamera memerlukan izin browser dan koneksi internet untuk memuat MediaPipe dari CDN. Kontrol kursor desktop hanya tersedia pada prototype Python lama, bukan dashboard web ini.",
+  preview: "Screenshot dashboard HandDT",
+  screenshots: [
+    { title: "Overview dashboard", description: "Dashboard merangkum status tangan dan jari yang terdeteksi, gestur aktif, serta mode menggambar. Screenshot menunjukkan keadaan awal sebelum kamera dinyalakan.", orientation: "landscape" },
+    { title: "Live studio dan kanvas", description: "Area studio memisahkan input kamera dari kanvas gambar. Pengguna dapat menggambar dengan telunjuk, memilih warna, membatalkan atau menghapus goresan, dan menyimpan kanvas sebagai PNG.", orientation: "landscape" },
+  ],
+});
+
+Object.assign(projectDetails[6].EN, {
+  title: "HandDT - Hand Detection & Gesture Interaction",
+  background: "HandDT explores touch-free human-computer interaction. Users can use a webcam to detect hand movements and interact with a dashboard and drawing canvas directly in the browser.",
+  goals: [
+    "Detect and track up to two hands, raised-finger counts, and hand landmarks in real time.",
+    "Recognize gestures such as Fist, Peace, Love You, Rock, OK, Thumbs Up, Call Me, and Open Hand.",
+    "Let users draw and select colors on a virtual canvas through finger movements.",
+  ],
+  process: [
+    "Captured webcam input and detected hand landmarks with MediaPipe Hands.",
+    "Processed landmark positions in JavaScript to count fingers and identify gesture patterns.",
+    "Used the right index finger to draw and the left index finger to select a color; the palette can also be clicked.",
+    "Connected actions to the Canvas API for drawing, undo, clearing the canvas, and downloading the result as a PNG.",
+  ],
+  outcome: "The result is a responsive dashboard with a camera preview, detection statistics, gesture guide, and interactive canvas. Processing runs in the browser; webcam video is not uploaded to a backend. Camera access requires browser permission and an internet connection to load MediaPipe from a CDN. Desktop cursor control is only available in the legacy Python prototype, not this web dashboard.",
+  preview: "HandDT dashboard screenshots",
+  screenshots: [
+    { title: "Dashboard overview", description: "The dashboard summarizes detected hands and fingers, the active gesture, and drawing mode. This screenshot shows the initial state before the camera is enabled.", orientation: "landscape" },
+    { title: "Live studio and canvas", description: "The studio separates the camera input from the drawing canvas. Users can draw with an index finger, choose a color, undo or clear strokes, and save the canvas as a PNG.", orientation: "landscape" },
+  ],
+});
+
+Object.assign(projectDetails[5].ID, {
+  background: "Pemilihan digital membutuhkan aturan yang konsisten dan hasil yang dapat diperiksa. Proyek ini mengeksplorasi penggunaan smart contract untuk mengatur pemilihan, memvalidasi suara, dan mencatat transaksi pada jaringan blockchain lokal Hardhat.",
+  goals: [
+    "Menyediakan alur bagi pemilih untuk melihat kandidat, memberikan suara melalui MetaMask, dan memantau hasil.",
+    "Menegakkan aturan satu alamat wallet hanya dapat memilih satu kali serta memvalidasi pilihan melalui smart contract.",
+    "Menyediakan akses admin bagi pemilik kontrak untuk mengelola kandidat dan memantau aktivitas pemilihan.",
+    "Menampilkan statistik pemilih dan hasil pemungutan suara secara transparan pada jaringan lokal.",
+  ],
+  process: [
+    "Membuat smart contract Solidity untuk pencatatan suara, validasi pemilih, pengelolaan kandidat, dan aturan masa pemilihan tujuh hari.",
+    "Menjalankan jaringan Hardhat lokal, mengompilasi kontrak, lalu men-deploy kontrak ke jaringan tersebut.",
+    "Membangun antarmuka React dan Vite, kemudian menghubungkannya ke kontrak melalui Ethers.js.",
+    "Menggunakan MetaMask untuk menghubungkan wallet dan meminta persetujuan transaksi voting.",
+    "Membuat mode pemilih dan admin untuk melihat hasil, statistik, voter terbaru, serta mencetak atau menyimpan hasil sebagai PDF.",
+  ],
+  outcome: "Hasilnya adalah DApp voting dengan mode pemilih dan admin yang berjalan pada Hardhat Local. Kontrak belum dideploy ke blockchain publik. Node Hardhat dan kontrak perlu dijalankan atau di-deploy kembali setelah jaringan lokal di-reset; catatan serta alamat wallet di jaringan publik dapat dilihat secara terbuka.",
+  preview: "Screenshot aplikasi Blockchain-Based Voting System",
+  galleryGroups: [{ title: "Alur voting dan dashboard", indices: [0, 1, 2, 3], columns: 2 }],
+  screenshots: [
+    { title: "Halaman utama", description: "Menampilkan wallet yang terhubung, jaringan Hardhat Local, alamat kontrak, status pemilihan, dan ringkasan jumlah voter.", orientation: "landscape" },
+    { title: "Mode pemilih", description: "Menampilkan statistik voter, status apakah wallet sudah memilih, serta daftar kandidat dan kontrol untuk memberikan suara.", orientation: "landscape" },
+    { title: "Mode admin", description: "Dashboard khusus pemilik kontrak untuk melihat statistik dan grafik voter, mengelola kandidat, memantau aktivitas, serta mencetak hasil.", orientation: "landscape" },
+    { title: "Konfirmasi transaksi MetaMask", description: "Setelah kandidat dipilih, pemilih memeriksa dan menyetujui transaksi pada MetaMask di jaringan Hardhat Local sebelum suara dicatat oleh smart contract.", orientation: "landscape" },
+  ],
+});
+
+Object.assign(projectDetails[5].EN, {
+  background: "Digital elections need consistent rules and verifiable results. This project explores using smart contracts to govern an election, validate votes, and record transactions on a local Hardhat blockchain.",
+  goals: [
+    "Provide a flow for voters to view candidates, cast a vote through MetaMask, and monitor results.",
+    "Enforce one vote per wallet address and validate candidate selection through a smart contract.",
+    "Provide contract-owner admin access to manage candidates and monitor election activity.",
+    "Display voter statistics and election results transparently on the local network.",
+  ],
+  process: [
+    "Created a Solidity smart contract for vote recording, voter validation, candidate management, and a seven-day election period.",
+    "Started a local Hardhat network, compiled the contract, and deployed it to that network.",
+    "Built the interface with React and Vite, then connected it to the contract through Ethers.js.",
+    "Used MetaMask to connect wallets and authorize voting transactions.",
+    "Created voter and admin modes for results, statistics, recent voters, and printing or saving results as a PDF.",
+  ],
+  outcome: "The result is a voting DApp with voter and admin modes running on Hardhat Local. The contract has not been deployed to a public blockchain. The Hardhat node and contract need to be restarted or redeployed after a local network reset; wallet addresses and records on public networks are publicly visible.",
+  preview: "Blockchain-Based Voting System screenshots",
+  galleryGroups: [{ title: "Voting flow and dashboards", indices: [0, 1, 2, 3], columns: 2 }],
+  screenshots: [
+    { title: "Main page", description: "Shows the connected wallet, Hardhat Local network, contract address, election status, and a summary of voter participation.", orientation: "landscape" },
+    { title: "Voter mode", description: "Shows voter statistics, whether the connected wallet has voted, and the candidate list with voting controls.", orientation: "landscape" },
+    { title: "Admin mode", description: "A contract-owner dashboard for voter statistics and charts, candidate management, recent activity, and printing results.", orientation: "landscape" },
+    { title: "MetaMask transaction confirmation", description: "After a candidate is selected, the voter reviews and approves the transaction in MetaMask on Hardhat Local before the smart contract records the vote.", orientation: "landscape" },
+  ],
+});
+
+export default projectDetails;
