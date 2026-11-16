@@ -279,4 +279,57 @@ Object.assign(projectDetails[5].EN, {
   ],
 });
 
+projectDetails[7] = {
+  ID: {
+    title: "WeatherNow — Dashboard Cuaca & Bot Telegram",
+    eyebrow: "Studi Kasus · Aplikasi Cuaca",
+    background: "Informasi cuaca, prakiraan, dan riwayat suhu sering perlu dilihat melalui beberapa layanan. WeatherNow menyatukan akses tersebut dalam dashboard web dan bot Telegram yang menggunakan backend Go serta sumber data OpenWeather yang sama.",
+    goals: [
+      "Menampilkan cuaca terkini, waktu matahari terbit dan terbenam, prakiraan lima hari, serta riwayat suhu dalam satu dashboard.",
+      "Menyediakan akses cuaca melalui pencarian kota maupun lokasi yang dibagikan di Telegram.",
+      "Mendukung kota favorit, pengaturan bahasa, dan notifikasi ringkasan cuaca harian.",
+      "Menggunakan backend terpusat agar dashboard web dan bot Telegram mengakses layanan cuaca yang sama.",
+    ],
+    process: [
+      "Membangun dashboard dengan React 19, TypeScript, Vite, dan CSS untuk menampilkan cuaca serta visualisasi riwayat suhu.",
+      "Membuat API backend Go berbasis HTTP dan JSON yang mengambil data dari OpenWeather, dengan caching dan batas permintaan per IP.",
+      "Menghubungkan bot Telegram ke backend untuk cuaca, prakiraan, lokasi, kota favorit, dan pengaturan notifikasi.",
+      "Menyimpan preferensi website di localStorage serta menggunakan file JSON untuk riwayat cuaca dan status bot.",
+    ],
+    outcome: "WeatherNow menyediakan dua cara untuk mengakses informasi cuaca: dashboard web dan bot Telegram. Fitur prakiraan per jam, indeks UV, dan peringatan resmi bergantung pada akses OpenWeather One Call. Backend dan bot perlu dijalankan sebagai layanan terpisah; penyimpanan riwayat dan status menggunakan file JSON, bukan database terkelola.",
+    preview: "Screenshot dashboard dan bot Telegram WeatherNow",
+    galleryGroups: [{ title: "Dashboard dan bot cuaca", indices: [0, 1, 2], columns: 3 }],
+    screenshots: [
+      { title: "Dashboard cuaca", description: "Menampilkan kondisi cuaca saat ini, suhu, kelembapan, kecepatan angin, serta informasi matahari terbit dan terbenam.", orientation: "standard" },
+      { title: "Prakiraan dan riwayat suhu", description: "Memperlihatkan prakiraan cuaca dan grafik riwayat suhu untuk membantu melihat perubahan kondisi dari waktu ke waktu.", orientation: "standard" },
+      { title: "Bot Telegram", description: "Antarmuka bot untuk meminta informasi cuaca, mengakses prakiraan, dan menggunakan fitur cuaca melalui Telegram.", orientation: "standard" },
+    ],
+  },
+  EN: {
+    title: "WeatherNow — Weather Dashboard & Telegram Bot",
+    eyebrow: "Case Study · Weather Application",
+    background: "Weather conditions, forecasts, and temperature history are often spread across multiple services. WeatherNow brings them together in a web dashboard and Telegram bot backed by a shared Go API and OpenWeather data.",
+    goals: [
+      "Show current conditions, sunrise and sunset, a five-day forecast, and temperature history in one dashboard.",
+      "Provide weather access through city search or a location shared in Telegram.",
+      "Support favorite cities, language preferences, and scheduled daily weather summaries.",
+      "Use a centralized backend so the web dashboard and Telegram bot share the same weather service.",
+    ],
+    process: [
+      "Built the dashboard with React 19, TypeScript, Vite, and CSS to present weather data and temperature history charts.",
+      "Created a Go HTTP/JSON backend that retrieves data from OpenWeather, with caching and per-IP request limits.",
+      "Connected the Telegram bot to the backend for current weather, forecasts, shared locations, favorite cities, and notification settings.",
+      "Stored website preferences in localStorage and used JSON files for weather history and bot state.",
+    ],
+    outcome: "WeatherNow provides two ways to access weather information: a web dashboard and a Telegram bot. Hourly forecasts, UV index, and official alerts depend on OpenWeather One Call access. The backend and bot run as separate services; weather history and bot state use JSON files rather than a managed database.",
+    preview: "WeatherNow dashboard and Telegram bot screenshots",
+    galleryGroups: [{ title: "Weather dashboard and bot", indices: [0, 1, 2], columns: 3 }],
+    screenshots: [
+      { title: "Weather dashboard", description: "Shows current conditions, temperature, humidity, wind speed, and sunrise and sunset information.", orientation: "standard" },
+      { title: "Forecast and temperature history", description: "Displays the weather forecast and a temperature history chart to help track changing conditions.", orientation: "standard" },
+      { title: "Telegram bot", description: "The bot interface for requesting current weather, forecasts, and other weather features in Telegram.", orientation: "standard" },
+    ],
+  },
+};
+
 export default projectDetails;

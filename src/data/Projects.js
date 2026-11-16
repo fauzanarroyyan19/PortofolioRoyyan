@@ -69,6 +69,23 @@ const projects = [
     live: "https://handflow-studio.vercel.app/",
     repo: "https://github.com/fauzanarroyyan19/HandDT",
   },
+  {
+    id: 7,
+    title: "WeatherNow",
+    tech: ["React 19", "TypeScript", "Vite", "Go", "OpenWeather API", "Telegram Bot API"],
+    desc: {
+      ID: "Aplikasi pemantauan cuaca melalui dashboard web dan bot Telegram. WeatherNow menampilkan cuaca terkini, prakiraan, riwayat suhu, kota favorit, serta notifikasi harian melalui backend Go terpusat.",
+      EN: "A weather monitoring application with a web dashboard and Telegram bot. WeatherNow provides current conditions, forecasts, temperature history, favorite cities, and daily notifications through a centralized Go backend.",
+    },
+    image: "/projects/weathernow/halamancuaca.png",
+    screenshots: [
+      "/projects/weathernow/halamancuaca.png",
+      "/projects/weathernow/halamanprediksidanriwayatsuhu.png",
+      "/projects/weathernow/telecuaca.png",
+    ],
+    live: "",
+    repo: "https://github.com/fauzanarroyyan19/WheatherZyn",
+  },
 ];
 
 export default projects;

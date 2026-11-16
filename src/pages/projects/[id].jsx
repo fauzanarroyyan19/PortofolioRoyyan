@@ -76,10 +76,10 @@ export default function ProjectCaseStudy({ project, details }) {
             {galleryGroups.map((group) => (
               <div key={group.title ?? "project-preview"}>
                 {group.title && <h3 className="mb-5 border-b border-white/[.07] pb-3 font-display text-base font-semibold text-violet-200">{group.title}</h3>}
-                <div className={`grid gap-x-8 gap-y-10 ${group.columns === 3 ? "lg:grid-cols-3" : "lg:grid-cols-2"}`}>
+                <div className={`grid gap-x-6 gap-y-8 ${group.columns === 3 ? "lg:grid-cols-3" : "lg:grid-cols-2"}`}>
                   {group.screenshots.map((screenshot, index) => (
                     <figure key={screenshot.src} className="overflow-hidden rounded-2xl border border-white/[.09] bg-[#101018] shadow-lg shadow-black/10">
-                      <div className={`relative ${screenshot.orientation === "landscape" ? "aspect-video bg-[#1a1d24]" : "aspect-[4/5] bg-white"}`}>
+                      <div className={`relative ${screenshot.orientation === "landscape" ? "aspect-video bg-[#11131a]" : screenshot.orientation === "standard" ? "aspect-[4/3] bg-[#11131a]" : "aspect-[4/5] bg-white"}`}>
                         <Image src={screenshot.src} alt={screenshot.title ?? `${localizedTitle} screenshot ${index + 1}`} fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-contain"/>
                       </div>
                       <figcaption className="p-4 sm:p-5"><h4 className="text-sm font-semibold text-slate-100">{screenshot.title ?? detail.preview}</h4>{screenshot.description && <p className="mt-2 text-xs leading-6 text-slate-400">{screenshot.description}</p>}</figcaption>
