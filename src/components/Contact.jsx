@@ -44,7 +44,7 @@ export default function Contact() {
           </div>
           <motion.form ref={formRef} onSubmit={sendEmail} className="rounded-2xl border border-white/[.08] bg-[#101018] p-5 sm:p-7" initial={{ opacity: 0, y: 14 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <div className="grid gap-4 sm:grid-cols-2">
-              <label className="text-xs font-medium text-slate-400">{copy.name}<input type="text" name="name" placeholder="Royyan" required className="contact-input mt-2"/></label>
+              <label className="text-xs font-medium text-slate-400">{copy.name}<input type="text" name="name" placeholder={lang === "ID" ? "Nama lengkap" : "Your full name"} required className="contact-input mt-2"/></label>
               <label className="text-xs font-medium text-slate-400">{copy.email}<input type="email" name="email" placeholder="you@example.com" required className="contact-input mt-2"/></label>
             </div>
             <label className="mt-4 block text-xs font-medium text-slate-400">{copy.message}<textarea name="message" placeholder={lang === "ID" ? "Ceritakan sedikit tentang pesan Anda…" : "Tell me a little about your message…"} required rows={5} className="contact-input mt-2 resize-y"/></label>

@@ -28,7 +28,7 @@ export default function ProjectCaseStudy({ project, details }) {
   return (
     <main className="min-h-screen bg-[#09090f] px-4 pb-16 pt-6 text-slate-200 sm:px-6 sm:pt-8">
       <Head>
-        <title>{project.title} · Royyan Portfolio</title>
+        <title>{project.title} · Fauzan Ar Royyan Portfolio</title>
         <meta name="description" content={localizedDesc} />
       </Head>
       <div className="mx-auto max-w-5xl">
@@ -38,7 +38,7 @@ export default function ProjectCaseStudy({ project, details }) {
             <div className="flex rounded-xl border border-white/10 bg-white/[.03] p-1" aria-label={lang === "ID" ? "Pilih bahasa" : "Choose language"}>
               {["ID", "EN"].map((code) => <button key={code} type="button" onClick={() => changeLanguage(code)} aria-pressed={lang === code} className={`rounded-lg px-2.5 py-1 text-xs font-semibold transition ${lang === code ? "bg-violet-300 text-[#171020]" : "text-slate-400 hover:text-white"}`}>{code}</button>)}
             </div>
-            <Link href="/" className="font-display text-sm font-semibold tracking-tight text-white">Royyan<span className="text-violet-300">.</span></Link>
+            <Link href="/" className="font-display text-sm font-semibold tracking-tight text-white">Fauzan Ar Royyan<span className="text-violet-300">.</span></Link>
           </div>
         </div>
 

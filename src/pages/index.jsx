@@ -29,7 +29,7 @@ export default function Home() {
       <Contact />
       <MiniVote />
       <footer className="border-t border-white/[.06] px-5 py-6 text-center text-xs text-slate-500">
-        © {new Date().getFullYear()} Royyan — Made With Next.js & Tailwind
+        © {new Date().getFullYear()} Fauzan Ar Royyan — Made With Next.js & Tailwind
       </footer>
     </div>
   );

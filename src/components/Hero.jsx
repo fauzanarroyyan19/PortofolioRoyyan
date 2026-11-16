@@ -4,9 +4,9 @@ import { ArrowDown, ArrowUpRight, MapPin } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 
 const profilePhotos = [
-  { src: "/profile/profile-1-framed.png", alt: "Fauzan AR Royyan" },
-  { src: "/profile/profile-2-framed.png", alt: "Fauzan AR Royyan with graduation bouquet" },
-  { src: "/profile/profile-3-framed.png", alt: "Fauzan AR Royyan giving a thumbs up" },
+  { src: "/profile/profile-1-framed.png", alt: "Fauzan Ar Royyan" },
+  { src: "/profile/profile-2-framed.png", alt: "Fauzan Ar Royyan with graduation bouquet" },
+  { src: "/profile/profile-3-framed.png", alt: "Fauzan Ar Royyan giving a thumbs up" },
 ];
 
 export default function Hero() {
@@ -25,7 +25,7 @@ export default function Hero() {
   } : {
     eyebrow: "PORTFOLIO · 2026",
     first: "Hello, I'm",
-    name: "Fauzan ArRoyyan",
+    name: "Fauzan Ar Royyan",
     role: "Web Developer & Data Analyst",
     subtitle: "Interested in AI & Machine Learning",
     desc: "An Informatics Engineering graduate (GPA 3.72) with experience in web development, data analysis, and IT support. Built an IT Support Dashboard at PLN Icon Plus, processed 1,000+ forestry datasets at the Ministry of Forestry, and led a team of 24 laboratory assistants.",
