@@ -18,7 +18,11 @@ export default function ProjectCaseStudy({ project, details }) {
   };
   const localizedDesc = typeof project.desc === "string" ? project.desc : project.desc[lang] ?? project.desc.EN ?? project.desc.ID;
   const screenshots = project.screenshots?.length
-    ? project.screenshots.map((src, index) => ({ src, ...detail.screenshots?.[index] }))
+    ? project.screenshots.map((src, index) => ({
+        src,
+        ...detail.screenshots?.[index],
+        orientation: detail.screenshots?.[index]?.orientation ?? (project.id === 8 ? "standard" : undefined),
+      }))
     : [{ src: project.image, title: detail.preview, description: copy.previewNote }];
   const galleryGroups = detail.galleryGroups?.map((group) => ({
     ...group,
